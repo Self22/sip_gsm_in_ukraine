@@ -1,0 +1,62 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+
+// sections
+@import "partials/header";
+@import "partials/footer";
+@import "partials/index";
+
+//fonts
+@import "../fonts/opensans.css";
+/*	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic*/
+
+
+*{
+  @include box-sizing(border-box);
+}
+
+html{
+  position: relative;
+  font-size: 16px;
+
+  @include desktop {
+    font-size: 16px;
+  }
+
+  @include laptop {
+    font-size: 15px;
+  }
+
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include phones {
+    font-size: 13px;
+  }
+}
+
+html, body{
+  min-height: 100%;
+  font-family: Open Sans, Optima, sans-serif;
+  width: 100%;
+  line-height: 1.42;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+.section{
+  min-height: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  @extend %clearfix;
+}
+
+.empty{
+  height: 150px;
+}
