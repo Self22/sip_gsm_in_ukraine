@@ -1,2 +1,2 @@
-
+$(document).ready(function(){!function(){var n=!0;$(".channel-acco__trigger-link").on("click",function(c){c.preventDefault();var e=$(this),s=(e.closest(".channels__list"),e.closest(".channel__item")),a=s.find(".channel-acco__descr"),i=500;n&&(n=!1,s.hasClass("active")?(s.removeClass("active"),a.slideUp(function(){n=!0})):(s.addClass("active").siblings().removeClass("active").find(".channel-acco__descr").slideUp(i),a.slideDown(i,function(){n=!0})))})}()});
 //# sourceMappingURL=main.js.map
