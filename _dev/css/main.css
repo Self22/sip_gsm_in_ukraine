@@ -560,7 +560,7 @@ textarea {
 .intro {
   margin-bottom: 2%; }
 
-.channels__title {
+.section__title {
   font-weight: 400;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   margin-bottom: 4%; }
@@ -605,7 +605,7 @@ textarea {
     margin-right: 4%;
     font-size: 22px; }
   .channel-acco__trigger-title:hover {
-    border: 1px solid #af1212;
+    border: 1px solid rgba(175, 18, 18, 0.6);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); }
 
 .channel-acco__trigger-icon {
@@ -629,6 +629,33 @@ textarea {
     font-weight: 600; }
   .connect i {
     font-weight: 300; }
+
+.content__numbers {
+  text-align: center;
+}
+
+.numbers__tabs-list, .numbers__tab {
+  margin: 0;
+  padding: 0;
+}
+
+.numbers__tabs-list {
+  list-style: none;
+  font-size: 0;
+}
+
+.numbers__tab {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-bottom: 2%;
+  margin-right: 4%;
+  padding-top: 2%;
+  font-size: 24px;
+  font-weight: 300;
+}
 
 /*	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic*/
 /*!

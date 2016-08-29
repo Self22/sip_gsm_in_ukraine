@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //аккордеон
     (function(){
 
         var flag = true;
