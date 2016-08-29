@@ -1,0 +1,29 @@
+.content__numbers {
+  text-align: center;
+}
+
+.numbers__tabs-list, .numbers__tab {
+  margin: 0;
+  padding: 0;
+}
+
+.numbers__tabs-list {
+  list-style: none;
+
+  font-size: 0;
+}
+
+.numbers__tab {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-bottom: 2%;
+  margin-right: 4%;
+  padding-top: 2%;
+  font-size: 24px;
+  font-weight: 300;
+}
+
