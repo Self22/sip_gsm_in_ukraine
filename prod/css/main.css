@@ -10,20 +10,16 @@ button, hr, input {
     position: relative
 }
 
-.client__item:after, .main__block:after {
-    content: ""
-}
-
-.nav, .nav-item {
-    -webkit-transition: all .5s
-}
-
 .channel-acco__trigger-icon img, .section__img img, legend {
     max-width: 100%
 }
 
-.clients__list, .nav, .numbers__tabs-list {
+.clients__list, .nav, .numbers__content-list, .numbers__tabs-list {
     list-style: none
+}
+
+.client__item:after, .main__block:after, .numbers__tab-active:after {
+    content: ""
 }
 
 *, legend {
@@ -142,7 +138,7 @@ abbr[title] {
     text-decoration: underline dotted
 }
 
-.channel-acco__trigger-link, .nav a {
+.channel-acco__trigger-link, .nav a, .numbers__tab-link {
     text-decoration: none
 }
 
@@ -357,6 +353,11 @@ textarea {
     display: block
 }
 
+.client__item, .numbers__tab {
+    display: inline-block;
+    vertical-align: top
+}
+
 .footer__adress {
     top: 34%;
     left: 16%
@@ -413,9 +414,7 @@ textarea {
 
 .client__item {
     position: relative;
-    display: inline-block;
     width: 248px;
-    vertical-align: top;
     text-align: center;
     margin-bottom: 30px;
     margin-right: 23px;
@@ -472,10 +471,12 @@ textarea {
     font-weight: 300;
     font-style: normal;
     letter-spacing: 1px;
+    -webkit-transition: all .5s;
     transition: all .5s
 }
 
 .nav-item {
+    -webkit-transition: all .5s;
     transition: all .5s
 }
 
@@ -509,7 +510,7 @@ textarea {
     text-align: left
 }
 
-.channels__list {
+.channels__list, .connect {
     margin-left: 10%
 }
 
@@ -519,10 +520,6 @@ textarea {
     margin-bottom: 4%;
     margin-left: 5%;
     text-align: justify
-}
-
-.fa, .fa-stack, .numbers__tab {
-    display: inline-block
 }
 
 .channel-acco__trigger-title {
@@ -548,7 +545,7 @@ textarea {
     font-size: 22px
 }
 
-.channel-acco__trigger-title:hover {
+.active .channel-acco__trigger .channel-acco__trigger-title, .channel-acco__trigger-title:hover {
     border: 1px solid rgba(175, 18, 18, .6);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, .3)
 }
@@ -565,14 +562,9 @@ textarea {
     padding-left: 4%;
     border-top: 1px solid #000;
     width: 75%;
-    margin-left: 10%;
     margin-top: 5%;
     padding-top: 2%;
     margin-bottom: 5%
-}
-
-.content__numbers, .fa-fw, .fa-li {
-    text-align: center
 }
 
 .connect p {
@@ -583,28 +575,121 @@ textarea {
     font-weight: 300
 }
 
+.content__numbers {
+    text-align: center
+}
+
+.numbers__tabs {
+    margin-bottom: 45px
+}
+
 .numbers__tab, .numbers__tabs-list {
     margin: 0;
     padding: 0
 }
 
 .numbers__tabs-list {
+    padding-left: 4%;
     font-size: 0
 }
 
 .numbers__tab {
-    vertical-align: top;
+    position: relative;
     width: 25%;
-    border: 1px solid #000;
-    border-radius: 5px;
+    height: 200px;
+    background: #e1f1f5;
+    border: 1px solid #c9c9ca;
+    border-radius: 20px;
     padding-bottom: 2%;
     margin-right: 4%;
     padding-top: 2%;
-    font-size: 24px
+    font-size: 24px;
+    -webkit-transition: all .5s;
+    transition: all .5s
+}
+
+.numbers__tab:hover {
+    background: #2f4288;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .6);
+    border: none
+}
+
+.numbers__tab:hover h3 {
+    color: #e1f1f5
+}
+
+.provider__logo {
+    width: 90px;
+    margin: 0 auto
+}
+
+.provider__logo img {
+    display: block;
+    max-width: 100%;
+    border-radius: 15px
+}
+
+.numbers__tab h3 {
+    font-size: 20px;
+    margin: 0 0 22px;
+    padding: 0;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    color: #3432a7
+}
+
+.numbers__content-item, .numbers__content-list {
+    margin: 0;
+    padding: 0
 }
 
 .fa.fa-pull-left, .fa.pull-left {
     margin-right: .3em
+}
+
+.numbers__content-list {
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%
+}
+
+.fa-fw, .fa-li {
+    text-align: center
+}
+
+.numbers__tab-active {
+    background: #2f4288;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, .5);
+    border: none
+}
+
+.numbers__tab-active h3 {
+    color: #e1f1f5
+}
+
+.numbers__tab-active:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -16%;
+    right: 34%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 14px solid rgba(47, 66, 136, .6)
+}
+
+.numbers__content-item {
+    display: none;
+    height: 200px
+}
+
+.numbers__content-item-active {
+    display: block;
+    height: 200px
+}
+
+.fa, .fa-stack {
+    display: inline-block
 }
 
 /*!

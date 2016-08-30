@@ -608,6 +608,11 @@ textarea {
     border: 1px solid rgba(175, 18, 18, 0.6);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); }
 
+.active .channel-acco__trigger .channel-acco__trigger-title {
+  border: 1px solid rgba(175, 18, 18, 0.6);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
 .channel-acco__trigger-icon {
   position: absolute;
   bottom: 6%;
@@ -634,6 +639,10 @@ textarea {
   text-align: center;
 }
 
+.numbers__tabs {
+  margin-bottom: 45px;
+}
+
 .numbers__tabs-list, .numbers__tab {
   margin: 0;
   padding: 0;
@@ -641,20 +650,104 @@ textarea {
 
 .numbers__tabs-list {
   list-style: none;
+  padding-left: 4%;
   font-size: 0;
 }
 
 .numbers__tab {
   display: inline-block;
   vertical-align: top;
+  position: relative;
   width: 25%;
-  border: 1px solid black;
-  border-radius: 5px;
+  height: 200px;
+  background: #e1f1f5;
+  border: 1px solid #c9c9ca;
+  border-radius: 20px;
   padding-bottom: 2%;
   margin-right: 4%;
   padding-top: 2%;
   font-size: 24px;
   font-weight: 300;
+  transition: all 0.5s;
+}
+
+.numbers__tab:hover {
+  background: #2f4288;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  border: none;
+}
+
+.numbers__tab:hover h3 {
+  color: #e1f1f5;
+}
+
+.provider__logo {
+  width: 90px;
+  margin: 0 auto;
+}
+
+.provider__logo img {
+  display: block;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.numbers__tab h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: #3432a7;
+}
+
+.numbers__tab-link {
+  text-decoration: none;
+}
+
+.numbers__content-list, .numbers__content-item {
+  margin: 0;
+  padding: 0;
+}
+
+.numbers__content-list {
+  text-align: justify;
+  list-style: none;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.numbers__tab-active {
+  background: #2f4288;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.numbers__tab-active h3 {
+  color: #e1f1f5;
+}
+
+.numbers__tab-active:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: -16%;
+  right: 34%;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 14px solid rgba(47, 66, 136, 0.6);
+}
+
+.numbers__content-item {
+  display: none;
+  height: 200px;
+}
+
+.numbers__content-item-active {
+  display: block;
+  height: 200px;
 }
 
 /*	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic*/
