@@ -1,0 +1,38 @@
+.content_contacts {
+
+  & .section__title {
+    text-align: center;
+  }
+
+  & .fa {
+    width: 22px;
+    color: #3432a7;
+  }
+
+}
+
+.contacts__info {
+  font-size: 19px;
+  font-weight: 300;
+  margin-left: 20%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  color: #34636f;
+}
+
+.fa-mobile {
+  font-size: 24px;
+}
+
+.fa-envelope-o {
+  font-size: 19px;
+}
+
+.fa-phone {
+  font-size: 20px;
+}
+
+.phones p, .email p, .support {
+  font-weight: 500;
+}
+

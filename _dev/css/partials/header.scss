@@ -21,12 +21,12 @@
 .logo {
   position: absolute;
   top: 5%;
-  left: 13%;
-
+  left: 16%;
+  padding-top: 8px;
   width: 300px;
   height: 65%;
-
-  color: #3432a7;
+  color: #ecf1f9;
+  z-index: 100;
 
   & h1 {
     margin: 0;
@@ -34,7 +34,7 @@
 
     font-weight: 400;
     font-style: normal;
-    font-size: 48px;
+    font-size: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 
   }
@@ -51,16 +51,15 @@
 
 .header__descr{
   position: absolute;
-  top: 16%;
-  right: 29%;
-
-  width: 32%;
-  height: 105px;
-  background: url(../img/futuristic-technology.jpg) 89%;
+  top: 8%;
+  right: 5%;
+  width: 84%;
+  height: 126px;
+  background: url(../img/technology-information.jpg) 207% 50%;
   background-size: 100%;
   border: 2px solid #3432a7;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header__phones {
@@ -72,9 +71,10 @@
 
   & h1 {
     font-size: 23px;
-    color: #3432a7;
+    color: #ecf1f9;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-weight: 300;
   }
 }
+
 
