@@ -52,14 +52,29 @@
 .header__descr{
   position: absolute;
   top: 16%;
-  right: 20%;
+  right: 29%;
 
-  width: 42%;
+  width: 32%;
   height: 105px;
-  background: url(../../img/futuristic-technology.jpg) 89%;
+  background: url(../img/futuristic-technology.jpg) 89%;
   background-size: 100%;
   border: 2px solid #3432a7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header__phones {
+  position: absolute;
+  top: 13%;
+  right: 10%;
+
+  font-weight: 100;
+
+  & h1 {
+    font-size: 23px;
+    color: #3432a7;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+  }
 }
 
