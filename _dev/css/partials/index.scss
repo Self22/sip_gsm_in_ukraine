@@ -27,13 +27,19 @@
 }
 
 .content__title {
-  text-align: right;
+  display: inline-block;
+  text-align: center;
   padding-right: 20%;
   margin-bottom: 30px;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 26px;
 }
+
+.content__title-index {
+  text-align: center;
+}
+
 
 .section p{
   text-align: justify;

@@ -54,6 +54,31 @@ html, body{
   line-height: 1.42;
 }
 
+.wrapper {
+
+  margin: 0 auto;
+
+  @include desktop {
+    width: 970px;
+  }
+
+  @include laptop {
+    width: 750px;
+
+  }
+
+  @include tablets {
+    width: 480px;
+
+  }
+
+  @include phones {
+    width: auto;
+  }
+
+}
+
+
 body{
   background-color: #ffffff;
 }
