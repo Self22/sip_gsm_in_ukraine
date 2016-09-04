@@ -1,12 +1,12 @@
 {
-  "name": "eugen",
-  "description": "",
-  "main": "index.js",
+  "name": "evgen",
+  "description": "sip gsm in ua",
+  "main": "index.html",
   "authors": [
     "eugen"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/Self22/sip_gsm_in_ukraine",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,6 +16,10 @@
   ],
   "dependencies": {
     "normalize.css": "*",
-    "jquery": "3.*"
-  }
+    "jquery": "3.*",
+    "bxslider-4": "bx-slider.js#^4.2.5"
+  },
+  "keywords": [
+    "sip"
+  ]
 }

@@ -14,9 +14,12 @@
   float: right;
   width: 10%;
 
-  & img {
-    max-width: 100%;
-    margin-bottom: 80px;
-    margin-top: 20px;
+  & i {
+    display: block;
+    font-size: 45px;
+    color: rgba(52, 50, 167, 0.7);
+    margin-bottom: 200px;
+    margin-top: 75px;
   }
+
 }

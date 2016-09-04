@@ -2569,7 +2569,7 @@ textarea {
 .header {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 7.5rem;
   background: url(../img/technology-information.jpg) 207% 50%;
   background-size: 100%;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
@@ -2592,18 +2592,33 @@ textarea {
   top: 5%;
   left: 16%;
   padding-top: 8px;
-  width: 300px;
+  width: 25rem;
   height: 65%;
   color: #ecf1f9;
   z-index: 100;
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    top: 18%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    top: 18%;
+    left: 5%;
+  }
+}
+
 .logo h1 {
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 38px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -2611,8 +2626,20 @@ textarea {
   margin: 0;
   padding: 0;
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .logo span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo span {
+    display: none;
+  }
 }
 
 .header__descr {
@@ -2620,10 +2647,24 @@ textarea {
   top: 8%;
   right: 5%;
   width: 84%;
-  height: 126px;
+  height: 6.25rem;
   border: 2px solid #3432a7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .header__descr {
+    right: 3%;
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__descr {
+    right: 3%;
+    width: 94%;
+  }
 }
 
 .header__phones {
@@ -2634,24 +2675,40 @@ textarea {
 }
 
 .header__phones h1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 9px;
   font-size: 23px;
-  color: #ecf1f9;
+  color: #fafafa;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  font-weight: 300;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .header__phones {
+    right: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__phones {
+    right: 3%;
+  }
 }
 
 .footer {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 9.375rem;
   background-color: #34636f;
   box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.3);
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
-.footer__adress, .footer__support, .footer__socials {
+.footer__adress, .footer__support {
   position: absolute;
   color: white;
+  width: 50%;
 }
 
 .footer__adress span, .footer__support span {
@@ -2661,6 +2718,18 @@ textarea {
 .footer__adress {
   top: 34%;
   left: 16%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__adress {
+    left: 6%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__adress {
+    left: 6%;
+  }
 }
 
 .footer__support {
@@ -2673,6 +2742,20 @@ textarea {
   width: 75%;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    float: none;
+    width: 100%;
+  }
+}
+
 .section {
   padding: 0 2% 0 4%;
   margin-bottom: 80px;
@@ -2680,24 +2763,21 @@ textarea {
 }
 
 .section__clients .content__title {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .section__img {
   position: absolute;
-  width: 65px;
-  bottom: 70%;
-  right: 6%;
-}
-
-.section__img img {
-  max-width: 100%;
+  right: 5%;
+  font-size: 1.875rem;
+  top: -2%;
+  color: rgba(52, 50, 167, 0.7);
 }
 
 .content__title {
   text-align: center;
   padding-right: 20%;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 26px;
@@ -2723,20 +2803,20 @@ textarea {
 .client__item {
   position: relative;
   display: inline-block;
-  width: 248px;
+  width: 15.5rem;
   vertical-align: top;
   text-align: center;
-  margin-bottom: 30px;
-  margin-right: 23px;
+  margin-bottom: 1.875rem;
+  margin-right: 1.4375rem;
   border: 1px solid #d8c0c0;
-  height: 260px;
+  height: 16.25rem;
   border-radius: 25px;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .client__item img {
-  width: 170px;
+  width: 10.625rem;
   display: block;
   margin: 0 auto;
 }
@@ -2768,13 +2848,100 @@ textarea {
   font-size: 18px;
 }
 
+.slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider {
+    display: none;
+  }
+}
+
+.slide {
+  height: 140px;
+  color: #ffffff;
+  background-color: #2eb90d;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.3125rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.slide a {
+  color: white;
+}
+
+.slide p {
+  font-size: 1.25rem;
+  margin-bottom: -13px;
+  text-align: left;
+  margin-left: 43%;
+  color: #e2ff00;
+  font-weight: 500;
+  text-shadow: 3px 5px 5px rgba(109, 125, 41, 0.45);
+}
+
+.slide__sip {
+  padding-top: 35px;
+}
+
+.slide__calls {
+  padding: 25px;
+}
+
+.slide__numbers {
+  padding: 7px;
+}
+
+.numbers {
+  margin-top: -23px;
+}
+
+.fa-usd {
+  color: #ffc800;
+  font-size: 38px;
+}
+
+.bx-wrapper .bx-pager, .bx-pager-link {
+  display: none;
+}
+
+.bx-pager-item {
+  display: none;
+}
+
 .menu {
   float: left;
   width: 24%;
   border-right: 2px solid #3432a7;
   padding-right: 4%;
   margin-top: 2%;
-  height: 223px;
+  height: 13.9375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    border-right: none;
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    border-right: none;
+    float: none;
+    width: 100%;
+  }
 }
 
 .nav {
@@ -2785,7 +2952,6 @@ textarea {
   font-style: normal;
   letter-spacing: 1px;
   color: #3432a7;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   transition: all 0.5s;
 }
 
@@ -2803,24 +2969,45 @@ textarea {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-item {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-item {
+    display: inline-block;
+  }
+}
+
 .nav-item-active {
   position: relative;
-  font-weight: 400;
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
 }
 
 .nav-item-active i {
   position: absolute;
   display: block;
   right: -11%;
-  top: 12%;
+  top: 6%;
   font-size: 24px;
-  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item-active i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-item-active i {
+    display: none;
+  }
 }
 
 .nav-item:hover {
   font-weight: 400;
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .nextbike {
@@ -3094,10 +3281,12 @@ textarea {
   width: 10%;
 }
 
-.partner__img img {
-  max-width: 100%;
-  margin-bottom: 80px;
-  margin-top: 20px;
+.partner__img i {
+  display: block;
+  font-size: 45px;
+  color: rgba(52, 50, 167, 0.7);
+  margin-bottom: 200px;
+  margin-top: 75px;
 }
 
 .content_contacts .section__title {
