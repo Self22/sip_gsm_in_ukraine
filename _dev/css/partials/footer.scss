@@ -10,7 +10,6 @@
 .footer__adress, .footer__support {
   position: absolute;
   color: white;
-  width: 50%;
 }
 
 .footer__adress span, .footer__support span{
@@ -19,7 +18,8 @@
 
 .footer__adress{
   top: 34%;
-  left: 16%;
+  left: 20%;
+  width: 30%;
 
   @include tablets {
     left: 6%;
