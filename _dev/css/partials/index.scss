@@ -145,6 +145,10 @@
   font-weight: 300;
   text-align: center;
 
+  @include laptop {
+    font-size: 18px;
+  }
+
   & a {
     color: #132F68;
   }
@@ -159,6 +163,14 @@
     text-shadow: 3px 5px 5px rgba(109, 125, 41, 0.45);
   }
 
+}
+
+.slide_gsm {
+  padding-top: 29px;
+
+  @include laptop {
+    padding-top: 15px;
+  }
 }
 
 .slide__sip {
@@ -200,11 +212,13 @@
   margin-top: 2%;
   height: rem(223px);
 
+  @include laptop {
+    border-right: none;
+  }
+
   @include tablets {
     display: none;
-    //border-right: none;
-    //float: none;
-    //width: 100%;
+
   }
 
   @include phones {
@@ -214,6 +228,7 @@
     //width: 100%;
   }
 }
+
 
 .nav{
   list-style: none;
@@ -225,6 +240,10 @@
   color: #900CE8;
   //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   transition: all 0.5s;
+
+  @include laptop {
+    text-align: left;
+  }
 
   & a{
     text-decoration: none;
@@ -262,6 +281,10 @@
     font-size: 24px;
     //text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
 
+    @include laptop {
+      right: -52%;
+    }
+
     @include tablets {
       display: none;
     }
@@ -283,4 +306,6 @@
   background: #3432a7;
 }
 
-
+.fa-umbrella, .fa-wrench, .fa-check-circle-o, .fa-users {
+  font-size: rem(42px);
+}

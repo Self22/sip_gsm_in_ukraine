@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-.tabs {
-  height: 460px;
-}
+//.tabs {
+//  height: 460px;
+//}
 
 .numbers__tabs {
   margin-bottom: 70px;
@@ -135,7 +135,7 @@
   margin-left: 10%;
   width: 82%;
   border-top: 1px solid black;
-  padding-top: 3%;
+  margin-top: 3%;
 
 }
 
@@ -152,6 +152,21 @@
   margin-bottom: 5%;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+
+  @include laptop {
+    width: 75%;
+    margin-left: 15%;
+  }
+
+  @include tablets {
+    width: 75%;
+    margin-left: 10%;
+  }
+
+  @include phones {
+    width: 75%;
+    margin-left: 10%;
+  }
 }
 
 
