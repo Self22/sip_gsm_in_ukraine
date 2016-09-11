@@ -26,7 +26,7 @@
   padding-top: 8px;
   width: 45%;
   height: 65%;
-  color: #FFE10D;
+  color: $header;
   z-index: 100;
 
   @include tablets {
@@ -35,7 +35,7 @@
   }
 
   @include phones {
-    top: 11%;
+    top: 18%;
     left: 5%;
   }
 
@@ -48,6 +48,10 @@
     font-style: normal;
     font-size: 38px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    @include phones {
+      font-size: 30px;
+    }
 
   }
 
@@ -110,7 +114,7 @@
     padding: 0;
     margin-top: 9px;
     font-size: 23px;
-    color: #FFE10D;
+    color: $header;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-weight: 600;
 
@@ -120,8 +124,8 @@
     }
 
     @include phones {
-      margin-top: 0%;
-      font-size: 18px;
+      margin-top: 32px;
+      font-size: 14px;
     }
   }
 
@@ -131,8 +135,8 @@
   }
 
   @include phones {
-    right: 20%;
-    top: 26%;
+    right: 26%;
+    top: -19%;
   }
 }
 
@@ -179,15 +183,16 @@
   text-align: center;
   width: 187px;
   height: 190px;
-  border: 3px solid #ffe10d;
+  border: 1px solid #FF870D;
   font-size: 26px;
   border-radius: 24px;
-  background: rgba(255, 135, 13, 0.9);
+  background: rgba(144, 12, 232, 0.8);
   z-index: 100;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 
   & a {
     text-decoration: none;
-    color: #1d3f8a;
+    color: #ffe10d;
     font-weight: 300;
 
     &:hover {

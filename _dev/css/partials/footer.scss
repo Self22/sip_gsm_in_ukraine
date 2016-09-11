@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: rem(150px);
-  background-color: #34636f;
+  background-color: $footer;
   box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.3);
   margin-top: rem(50px);
 }
@@ -18,8 +18,8 @@
 
 .footer__adress{
   top: 34%;
-  left: 20%;
-  width: 30%;
+  left: 30%;
+  width: 25%;
 
   @include laptop {
     width: 25%;
@@ -30,6 +30,7 @@
   }
 
   @include phones {
+    top: 6%;
     left: 6%;
   }
 
@@ -37,6 +38,6 @@
 
 .footer__support{
   top: 34%;
-  left: 50%;
+  left: 61%;
 }
 

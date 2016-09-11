@@ -10,6 +10,14 @@
 /*
 	FontAwesome, 400
 */
+
+//vars
+$header: #c9f1ff;
+$text: #092772;
+$icons: #6BE2FF;
+$backslider: #b8f1ff;
+$footer: #142f61;
+
 // sections
 @import "partials/header";
 @import "partials/footer";
@@ -18,9 +26,6 @@
 @import "partials/numbers";
 @import "partials/partnership";
 @import "partials/contacts";
-
-
-
 
 *{
   @include box-sizing(border-box);

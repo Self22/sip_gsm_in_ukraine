@@ -30,7 +30,7 @@
   right: 5%;
   font-size: rem(30px);
   top: -2%;
-  color: #900CE8;
+  color: #6BE2FF;
 }
 
 .content__title {
@@ -137,8 +137,8 @@
 
 .slide {
   height: 140px;
-  color: #132F68;
-  background-color: #FFE10D;
+  color: $text;
+  background-color: #b8f1ff;
   border-radius: 5px;
   padding: 15px;
   font-size: rem(21px);
@@ -150,7 +150,7 @@
   }
 
   & a {
-    color: #132F68;
+    color: $text;
   }
 
   & p {
@@ -158,7 +158,7 @@
     margin-bottom: -13px;
     text-align: left;
     margin-left: 43%;
-    color: #900CE8;
+    color: $text;
     font-weight: 500;
     text-shadow: 3px 5px 5px rgba(109, 125, 41, 0.45);
   }
@@ -207,7 +207,7 @@
 .menu{
   float: left;
   width: 24%;
-  border-right: 2px solid #900CE8;
+  border-right: 2px solid $text;
   padding-right: 4%;
   margin-top: 2%;
   height: rem(223px);
@@ -237,7 +237,7 @@
   font-weight: 300;
   font-style: normal;
   letter-spacing: 1px;
-  color: #900CE8;
+  color: $text;
   //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   transition: all 0.5s;
 
@@ -247,7 +247,7 @@
 
   & a{
     text-decoration: none;
-    color: #900CE8;
+    color: $text;
   }
 }
 
@@ -304,6 +304,12 @@
 .nextbike {
   border-radius: 5px;
   background: #3432a7;
+}
+
+.client__title-utg {
+  @include phones {
+    font-size: 15px;
+  }
 }
 
 .fa-umbrella, .fa-wrench, .fa-check-circle-o, .fa-users {

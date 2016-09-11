@@ -50,12 +50,21 @@
       color: #e1f1f5;
     }
 
+
+  }
+
+  @include phones {
+    padding-top: 12%;
   }
 }
 
 .provider__logo {
   width: 90px;
   margin: 0 auto;
+
+  @include phones {
+    width: 55px;
+  }
 
   & img {
     display: block;
@@ -72,6 +81,10 @@
   font-weight: 500;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   color: #3432a7;
+
+  @include phones {
+    font-size: 16px;
+  }
 }
 
 .numbers__tab-link {
@@ -115,6 +128,10 @@
     font-size: 78px;
     text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
     transition: all 0.5s;
+
+    @include phones {
+      left: 23%;
+    }
   }
 
 }
@@ -166,8 +183,15 @@
   @include phones {
     width: 75%;
     margin-left: 10%;
+    font-size: 18px;
   }
 }
 
+.intro {
+  width: 80%;
+  text-align: justify;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
 
 
