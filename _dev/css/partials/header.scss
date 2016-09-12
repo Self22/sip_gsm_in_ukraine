@@ -39,7 +39,7 @@
     left: 5%;
   }
 
-  & h1 {
+  & p {
     margin: 0;
     padding: 0;
     margin-bottom: 5px;
@@ -149,12 +149,12 @@
   right: 4%;
   width: 63px;
   height: 63px;
-  border: 1px solid #FFE10D;
+  border: 2px solid #f2fdff;
   border-radius: 5px;
 
   & p {
     font-size: 72px;
-    color: #FFE10D;
+    color: #f2fdff;
     padding: 0;
     margin: 0;
     line-height: 0.2;
@@ -183,16 +183,16 @@
   text-align: center;
   width: 187px;
   height: 190px;
-  border: 1px solid #FF870D;
+  border: 2px solid #f2fdff;
   font-size: 26px;
   border-radius: 24px;
-  background: rgba(144, 12, 232, 0.8);
+  background: rgba(184, 241, 255, 0.7);
   z-index: 100;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 
   & a {
     text-decoration: none;
-    color: #ffe10d;
+    color: #092772;
     font-weight: 300;
 
     &:hover {

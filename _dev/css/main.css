@@ -2591,7 +2591,7 @@ textarea {
   padding-top: 8px;
   width: 45%;
   height: 65%;
-  color: #c9f1ff;
+  color: #ffffff;
   z-index: 100; }
   @media screen and (max-width: 768px) {
     .logo {
@@ -2601,7 +2601,8 @@ textarea {
     .logo {
       top: 18%;
       left: 5%; } }
-  .logo h1 {
+
+.logo p {
     margin: 0;
     padding: 0;
     margin-bottom: 5px;
@@ -2610,7 +2611,7 @@ textarea {
     font-size: 38px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
     @media screen and (max-width: 480px) {
-      .logo h1 {
+      .logo p {
         font-size: 30px; } }
   .logo span {
     margin: 0;
@@ -2653,7 +2654,7 @@ textarea {
     padding: 0;
     margin-top: 9px;
     font-size: 23px;
-    color: #c9f1ff;
+    color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-weight: 600; }
     @media screen and (max-width: 768px) {
@@ -2680,11 +2681,11 @@ textarea {
   right: 4%;
   width: 63px;
   height: 63px;
-  border: 1px solid #FFE10D;
+  border: 2px solid #f2fdff;
   border-radius: 5px; }
   .nav__mob p {
     font-size: 72px;
-    color: #FFE10D;
+    color: #f2fdff;
     padding: 0;
     margin: 0;
     line-height: 0.2; }
@@ -2706,15 +2707,15 @@ textarea {
   text-align: center;
   width: 187px;
   height: 190px;
-  border: 1px solid #FF870D;
+  border: 2px solid #f2fdff;
   font-size: 26px;
   border-radius: 24px;
-  background: rgba(144, 12, 232, 0.8);
+  background: rgba(184, 241, 255, 0.7);
   z-index: 100;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); }
   .nav__dropdown a {
     text-decoration: none;
-    color: #ffe10d;
+    color: #092772;
     font-weight: 300; }
     .nav__dropdown a:hover {
       font-weight: 500; }
@@ -2734,7 +2735,7 @@ textarea {
   position: relative;
   width: 100%;
   height: 9.375rem;
-  background-color: #142f61;
+  background-color: #092772;
   box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.3);
   margin-top: 3.125rem; }
 
@@ -2789,7 +2790,8 @@ textarea {
   right: 5%;
   font-size: 1.875rem;
   top: -2%;
-  color: #6BE2FF; }
+  color: #092772;
+}
 
 .content__title {
   text-align: center;
@@ -2994,7 +2996,7 @@ textarea {
   .client__title-utg {
     font-size: 15px; } }
 
-.fa-umbrella, .fa-wrench, .fa-check-circle-o, .fa-users {
+.fa-umbrella, .fa-wrench, .fa-check-circle-o, .fa-users, .fa-question {
   font-size: 2.625rem; }
 
 .content_channels {
@@ -3257,7 +3259,7 @@ textarea {
   .partner__img i {
     display: block;
     font-size: 45px;
-    color: #6BE2FF;
+    color: #092772;
     margin-bottom: 200px;
     margin-top: 75px; }
 
@@ -3265,7 +3267,8 @@ textarea {
   text-align: center; }
 .content_contacts .fa {
   width: 22px;
-  color: #900CE8; }
+  color: #092772;
+}
 
 .contacts__info {
   font-size: 19px;

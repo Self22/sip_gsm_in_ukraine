@@ -30,7 +30,7 @@
   right: 5%;
   font-size: rem(30px);
   top: -2%;
-  color: #6BE2FF;
+  color: $icons;
 }
 
 .content__title {
@@ -312,6 +312,6 @@
   }
 }
 
-.fa-umbrella, .fa-wrench, .fa-check-circle-o, .fa-users {
+.fa-umbrella, .fa-wrench, .fa-check-circle-o, .fa-users, .fa-question {
   font-size: rem(42px);
 }
