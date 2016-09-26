@@ -10,16 +10,19 @@
 .footer__adress, .footer__support {
   position: absolute;
   color: white;
+  font-style: normal;
 }
 
 .footer__adress span, .footer__support span{
   display: block;
+  font-style: normal;
 }
 
 .footer__adress{
   top: 34%;
   left: 30%;
   width: 25%;
+  font-style: normal;
 
   @include laptop {
     width: 25%;
@@ -40,4 +43,6 @@
   top: 34%;
   left: 61%;
 }
+
+
 

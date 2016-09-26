@@ -2741,15 +2741,21 @@ textarea {
 
 .footer__adress, .footer__support {
   position: absolute;
-  color: white; }
+  color: white;
+  font-style: normal;
+}
 
 .footer__adress span, .footer__support span {
-  display: block; }
+  display: block;
+  font-style: normal;
+}
 
 .footer__adress {
   top: 34%;
   left: 30%;
-  width: 25%; }
+  width: 25%;
+  font-style: normal;
+}
   @media screen and (max-width: 992px) {
     .footer__adress {
       width: 25%; } }
