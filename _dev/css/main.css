@@ -2732,6 +2732,10 @@ textarea {
 .mob__item-active a {
   font-weight: 500; }
 
+.phone__link {
+  text-decoration: none;
+}
+
 .footer {
   position: relative;
   width: 100%;
