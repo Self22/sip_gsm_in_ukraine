@@ -10,6 +10,8 @@
 
 .header .container{
   font-size: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .header__left, .header__right{
@@ -78,7 +80,7 @@
   top: 8%;
   right: 5%;
   width: 84%;
-  height: rem(100px);
+  height: 100px;
   border: 2px solid #3432a7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -94,26 +96,28 @@
   @include tablets {
     right: 3%;
     width: 94%;
+    height: rem(100px);
   }
 
   @include phones {
     right: 3%;
     width: 94%;
+    height: rem(100px);;
   }
 }
 
 .header__phones {
   position: absolute;
   top: 13%;
-  right: 10%;
-
+  right: 9%;
+  text-align: right;
   font-weight: 100;
 
   & h1 {
     font-style: normal;
     margin: 0;
     padding: 0;
-    margin-top: 9px;
+    margin-top: 1px;
     font-size: 23px;
     color: $header;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -126,13 +130,13 @@
 
     @include phones {
       margin-top: 32px;
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 
   @include tablets {
     right: 20%;
-    top: 26%;
+    top: 18%;
   }
 
   @include phones {
@@ -219,4 +223,32 @@
 .phone__link {
   text-decoration: none;
 }
+
+.header__email {
+  font-size: rem(18px);
+  font-weight: 300;
+  border-radius: 4px;
+  color: white;
+  font-style: normal;
+  text-align: center;
+  margin-left: 13px;
+  text-decoration: none;
+
+  & i {
+    margin-right: 8px;
+  }
+
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+
+
+
+
 

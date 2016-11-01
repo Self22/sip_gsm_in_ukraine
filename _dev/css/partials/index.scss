@@ -315,3 +315,66 @@
 .fa-umbrella, .fa-wrench, .fa-check-circle-o, .fa-users, .fa-question {
   font-size: rem(42px);
 }
+
+.fa-wrench {
+  animation: wrench_8905 5.875s ease infinite;
+  transform-origin: 90% 35%;
+}
+
+@keyframes wrench_8905 {
+  0% {
+    transform: rotate(-12deg)
+  }
+  3.40426% {
+    transform: rotate(12deg)
+  }
+  4.25532% {
+    transform: rotate(24deg)
+  }
+  7.65957% {
+    transform: rotate(-24deg)
+  }
+  8.51064% {
+    transform: rotate(-24deg)
+  }
+  11.91489% {
+    transform: rotate(24deg)
+  }
+  12.76596% {
+    transform: rotate(24deg)
+  }
+  16.17021% {
+    transform: rotate(-24deg)
+  }
+  17.02128% {
+    transform: rotate(-24deg)
+  }
+  20.42553% {
+    transform: rotate(24deg)
+  }
+  21.2766% {
+    transform: rotate(24deg)
+  }
+  24.68085% {
+    transform: rotate(-24deg)
+  }
+  25.53191% {
+    transform: rotate(-24deg)
+  }
+  28.93617% {
+    transform: rotate(24deg)
+  }
+  31.91489% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+
+
+
+
+
+
