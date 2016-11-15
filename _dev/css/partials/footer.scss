@@ -42,6 +42,12 @@
 .footer__support{
   top: 34%;
   left: 61%;
+
+  & a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 
