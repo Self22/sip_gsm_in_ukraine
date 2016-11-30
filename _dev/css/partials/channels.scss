@@ -24,12 +24,9 @@
 }
 
 .channel__item {
-  height: 75px;
+
   margin-bottom: 25px;
 
-  @include phones {
-    height: 110px;
-  }
 }
 
 /* Forward */
