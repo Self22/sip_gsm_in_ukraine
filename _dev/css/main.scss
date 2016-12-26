@@ -105,3 +105,39 @@ body{
   text-decoration: none;
   color: #ecf1f9;
 }
+
+.social-fb {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: -5px -5px;
+}
+
+.social-fb:hover {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: -46px -5px;
+}
+
+.social-vk {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 32px;
+  height: 30px;
+  background-position: -86px -5px;
+}
+
+.social-vk:hover {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 32px;
+  height: 30px;
+  background-position: -128px -5px;
+}
