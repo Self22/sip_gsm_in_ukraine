@@ -233,7 +233,7 @@
 .nav{
   list-style: none;
   text-align: right;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 1px;
@@ -276,9 +276,9 @@
   & i {
     position: absolute;
     display: block;
-    right: -11%;
-    top: 6%;
-    font-size: 24px;
+    right: -13%;
+    top: 12%;
+    font-size: 30px;
     //text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
 
     @include laptop {

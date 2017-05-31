@@ -40,13 +40,17 @@
 }
 
 .footer__support{
-  top: 34%;
+  top: 44%;
   left: 61%;
 
   & a {
-    display: block;
+    display: inline;
     color: white;
     text-decoration: none;
+  }
+
+  @include phones {
+    left: 38%;
   }
 }
 

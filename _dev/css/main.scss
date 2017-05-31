@@ -61,6 +61,7 @@ html, body{
 
 .wrapper {
 
+  font-size: 18px;
   margin: 0 auto;
 
   @include desktop {
@@ -73,11 +74,13 @@ html, body{
   }
 
   @include tablets {
+    font-size: 16px;
     width: 480px;
 
   }
 
   @include phones {
+    font-size: 14px;
     width: auto;
   }
 
