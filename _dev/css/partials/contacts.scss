@@ -44,3 +44,24 @@
   margin-right: 8px;
 }
 
+.work__hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -1%;
+
+  & svg {
+    width: 3vw;
+
+    @include phones {
+      width: 9vw;
+    }
+  }
+}
+
+.work__hours-text {
+  font-weight: 600;
+  margin-left: 2%;
+  font-style: normal;
+}
