@@ -31,19 +31,25 @@
   color: $header;
   z-index: 100;
 
+  @include laptop {
+    top: 13%;
+  }
+
   @include tablets {
-    top: 11%;
+    top: 31%;
     left: 5%;
   }
 
   @include phones {
-    top: 18%;
+    top: 17%;
     left: 5%;
   }
 
   & p {
     margin: 0;
     padding: 0;
+    white-space: nowrap;
+    width: 90%;
 
 
     font-weight: 400;
@@ -51,8 +57,21 @@
     font-size: 38px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 
+    @include laptop {
+      font-size: 28px;
+    }
+
+    @include tablets {
+      font-size: 20px;
+      white-space: normal;
+      text-align: center;
+    }
+
     @include phones {
-      font-size: 30px;
+      color: yellow;
+      font-size: 16px;
+      white-space: normal;
+      text-align: center;
     }
 
   }
@@ -60,7 +79,7 @@
   & span {
     margin: 0;
     padding: 0;
-    margin-left: 4%;
+
 
     font-style: italic;
     font-size: 22px;
@@ -188,7 +207,7 @@
 
   text-align: center;
   width: 65vw;
-  height: 190px;
+  height: 230px;
   border: 1px solid rgba(9, 39, 114, 0.5);
   font-size: 26px;
   border-radius: 8px;
@@ -219,6 +238,16 @@
 
 .mob__item-active a {
   font-weight: 500;
+}
+
+.mob__item-lang {
+  margin-top: 10px;
+  & a {
+    font-style: italic;
+    font-weight: 500;
+    color: #276ac0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
 }
 
 .phone__link {
