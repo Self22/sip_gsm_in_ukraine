@@ -485,6 +485,219 @@
   height: auto;
 }
 
+.overlay {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.channels__title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.channels__order {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  background: #2b73c8;
+  color: white;
+  font-size: 25px;
+  padding: 15px 35px;
+  margin-top: 35px;
+}
+
+/////////////// popup order block
+.popup__form-test, .popup__form-order {
+  padding: 0 4%;
+  position: fixed;
+  width: 57%;
+  background: white;
+  border-radius: 15px;
+  z-index: 30;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @include desktop {
+    height: 60vw;
+  }
+
+  @include tablets {
+    height: 95vh;
+    width: 90%;
+  }
+
+}
+
+.popup__title {
+  text-transform: uppercase;
+  font-size: 2vw;
+  flex: 649;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+  margin-top: 2vw;
+
+  @include desktop {
+    font-size: 4vw;
+  }
+
+  @include tablets {
+    font-size: 26px;
+    flex: 280;
+  }
+
+  @include phones {
+    flex: 170;
+  }
+
+}
+
+.popup__h2 {
+  flex: 293;
+  font-size: 30px;
+  text-transform: lowercase;
+  text-align: center;
+
+  @include tablets {
+    flex: 80;
+  }
+}
+
+.popup__text {
+  flex: 538;
+  font-size: 1.5vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2vw;
+
+  @include phones {
+    font-size: 6vw;
+    margin-top: 5vw;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+}
+
+.popupform-order, .popupform-test {
+  flex: 587;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 100px 0;
+
+  @include tablets {
+    flex: 410;
+  }
+}
+
+.order__name-input {
+  font-size: 2vw;
+  padding: 12px;
+  border-radius: 33px;
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
+
+}
+
+.order__tel-input {
+  font-size: 2vw;
+  padding: 12px;
+  border-radius: 33px;
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
+
+}
+
+.form__button-popup {
+  margin-top: 2vw;
+  width: 55%;
+  text-align: center;
+  padding: 1.2vh 0;
+  font-size: 2vw;
+  border-radius: 33px;
+  border: none;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.1);
+
+  @include tablets {
+    margin-top: 10px;
+    width: 90%;
+    font-size: 7vw;
+  }
+}
+
+.close__popup, .close__fr {
+  width: 34px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 40px;
+  top: 0;
+  right: 0;
+}
+
+.form-group {
+  margin: 1.5vw 2% 0;
+  width: 55%;
+  text-align: center;
+
+  @include tablets {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+}
+
+.message-success {
+  text-align: center;
+  font-size: 1.6vw;
+  padding-top: 30px;
+
+  @include phones {
+    font-size: 6vw;
+    margin-bottom: 5vw;
+  }
+
+}
 
 
 

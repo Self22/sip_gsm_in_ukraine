@@ -62,6 +62,7 @@
 
 .channel__descr {
   font-weight: 300;
+
 }
 
 .channel-acco__trigger {
@@ -182,10 +183,11 @@
   text-align: left;
   }
 
-.channel__decsr {
+.channels__decsr {
   text-align: center;
   font-size: 1.6vw;
   margin-top: 50px;
+  padding: 0 10px;
 
   @include phones {
     font-size: 5.6vw;
