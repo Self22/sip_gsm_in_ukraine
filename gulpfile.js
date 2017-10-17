@@ -31,7 +31,7 @@ var path = {
     },
     watch: {
         html: '_dev/**/*.html',
-        css: '_dev/css/**/*.scss',
+        css: '_dev/css/main.scss',
         js: '_dev/js/**/*.js',
         img: '_dev/img/**/*.*',
         fonts: '_dev/fonts/**/*.*'
@@ -55,43 +55,43 @@ var config = {
     };
 
 gulp.task('html:build', function () {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.dest.html)) //Выплюнем их в папку build
-        .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+    gulp.src(path.src.html) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+        .pipe(rigger()) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ rigger
+        .pipe(gulp.dest(path.dest.html)) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ build
+        .on('end', browserSync.reload); //пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 });
 
 gulp.task('js:build', function () {
-    gulp.src(path.src.js) //Найдем наш main файл
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(sourcemaps.init()) //Инициализируем sourcemap
-        .pipe(uglify()) //Сожмем наш js
-        .pipe(sourcemaps.write('.')) //Пропишем карты
-        .pipe(gulp.dest(path.dest.js)) //Выплюнем готовый файл в build
-        .pipe(reload({stream: true})); //И перезагрузим сервер
+    gulp.src(path.src.js) //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ main пїЅпїЅпїЅпїЅ
+        .pipe(rigger()) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ rigger
+        .pipe(sourcemaps.init()) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ sourcemap
+        .pipe(uglify()) //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ js
+        .pipe(sourcemaps.write('.')) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        .pipe(gulp.dest(path.dest.js)) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ build
+        .on('end', browserSync.reload); //пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 });
 
 gulp.task('css:build', function () {
-    gulp.src(path.src.css) //Выберем наш main.scss
-        .pipe(sourcemaps.init()) //То же самое что и с js
-        .pipe(sass().on('error', sass.logError)) //Скомпилируем
-        .pipe(prefixer()) //Добавим вендорные префиксы
-        .pipe(cleanCSS()) //Сожмем
+    gulp.src(path.src.css) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ main.scss
+        .pipe(sourcemaps.init()) //пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅ js
+        .pipe(sass().on('error', sass.logError)) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        // .pipe(prefixer()) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        // .pipe(cleanCSS()) //пїЅпїЅпїЅпїЅпїЅпїЅ
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(path.dest.css)) //И в build
-        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.dest.css)) //пїЅ пїЅ build
+        .on('end', browserSync.reload);
 });
 
 gulp.task('img:build', function () {
-    gulp.src(path.src.img) //Выберем наши картинки
-        .pipe(imagemin({ //Сожмем их
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()],
-            interlaced: true
-        }))
-        .pipe(gulp.dest(path.dest.img)) //И бросим в build
-        .pipe(reload({stream: true}));
+    gulp.src(path.src.img) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    // .pipe(imagemin({ //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
+    //     progressive: true,
+    //     svgoPlugins: [{removeViewBox: false}],
+    //     use: [pngquant()],
+    //     interlaced: true
+    // }))
+        .pipe(gulp.dest(path.dest.img)) //пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ build
+        .on('end', browserSync.reload);
 });
 
 gulp.task('fonts:build', function() {

@@ -1,0 +1,29 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+
+.section__title-partner {
+  text-align: center;
+}
+
+.partner__content {
+  float: left;
+  text-align: justify;
+  width: 68%;
+  margin-left: 10%;
+}
+
+.partner__img {
+  margin-right: 6%;
+  float: right;
+  width: 10%;
+
+  & i {
+    display: block;
+    font-size: 45px;
+    color: #092772;
+    margin-bottom: 200px;
+    margin-top: 75px;
+  }
+
+}
