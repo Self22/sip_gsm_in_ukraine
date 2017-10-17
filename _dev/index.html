@@ -79,7 +79,7 @@
                    placeholder="Город" required>
         </div>
         <div class="popupform__textarea">
-            <textarea name="message" class="form-control" id="message" rows="4"
+            <textarea name="message" class="form-control" id="order" rows="4"
                       placeholder="Напишите тип и количество нужных каналов. Если нужны номера, укажите их оператора и количество"
                       required></textarea>
 
@@ -101,9 +101,7 @@
             </a>
         </div>
         <div class="header__right">
-            <div class="header__descr">
 
-                </div>
             <address class="header__phones">
                 <a href="tel:+380504544043" class="phone__link" itemprop="telephone" content="+380504544043"><i
                         class="fa fa-phone" aria-hidden="true"></i>
@@ -167,7 +165,7 @@
             <main class="content">
                 <div class="channels__acc">
                     <ul class="channels__list" id="channels">
-                        <h2 class="channels__title">Каналы с входящими\исходящими звонками:</h2>
+                        <h2 class="channels__title">SIP-каналы с входящими\исходящими звонками:</h2>
                         <li class="channel__item">
                             <div class="channel-acco__trigger hvr-forward active">
                                 <a href="#" class="channel-acco__trigger-link">
@@ -183,7 +181,7 @@
                                 </a>
                             </div>
                             <div class="channel-acco__descr">
-                                <b>Ежемесячная абонплата:</b> 260 грн\мес. <br>
+                                <b>Ежемесячная абонплата:</b> <span class="channel__price">260 грн\мес.</span> <br>
                                 <b>Кол-во минут исходящих звонков <span class="underline">НА МОБИЛЬНЫЕ УКРАИНА</span>, в
                                     мес.:</b> 1000 <br>
                                 <b>Тарификация:</b> поминутная <br>
@@ -192,28 +190,28 @@
                                 <b>Обратный перезвон на отображаемый номер:</b> открыт. <br>
                                 <b>Входящие звонки:</b> к каналу может быть подключён любой
                                 существующий номер мобильных операторов Украины (который Вы можете <a
-                                    href="numbers.html">заказать у нас</a>). Каждый мобильный номер может быть
+                                    href="numbers.html">заказать у нас</a>). Каждый мобильный SIP-номер может быть
                                 сделан многоканальным (до 30 каналов и выше). Все входящие звонки бесплатные.<br>
                                 <p class="channel__descr">Канал оптимален в работе малого и среднего бизнеса как
                                     экономная и
                                     простая замена GSM шлюза.</p>
-                                <p class="channel__descr">За каналом не закреплены фиксированные номера операторов, и
+                                <p class="channel__descr">За каналом не закреплены фиксированные номера при исходящих, и
                                     при
-                                    звонках на мобильные
-                                    телефоны отображаемые номера на вызываемом телефоне будут разными. Для удобства нами
-                                    реализован механизм, в результате которого при обратном перезвоне на этот номер
+                                    звонках
+                                    отображаемые номера на вызываемом телефоне будут разными. Реализован механизм, в
+                                    результате которого при обратном перезвоне на этот номер
                                     звонящий
-                                    попадает непосредственно на канал, с которого исходил звонок – вне зависимости от
+                                    попадёт непосредственно на канал, с которого исходил звонок – вне зависимости от
                                     того,
                                     через какое время происходит перезвон (через день или через год). Как показывает
                                     практика,
-                                    этого вполне хватает для нормальной работы практически любой компании. <br> Канал по
+                                    этого хватает для нормальной работы практически любой компании. <br> Канал по
                                     умолчанию безномерной.</p>
 
 
                             </div>
                         </li>
-                        <h2 class="channels__title">Каналы с исходящими звонками:</h2>
+                        <h2 class="channels__title">SIP-каналы с исходящими звонками:</h2>
                         <li class="channel__item">
                             <div class="channel-acco__trigger hvr-forward active">
                                 <a href="#" class="channel-acco__trigger-link">
@@ -240,7 +238,11 @@
                                 </a>
                             </div>
                             <div class="channel-acco__descr">
-                                <b>Ежемесячная абонплата:</b> 200 грн\мес. <br>
+                                <b>Ежемесячная абонплата:</b> <span class="channel__price">200 грн\мес.</span>, при
+                                обслуживании через
+                                <a href="http://online24.net.ua/products/vchasno.html">сервис электронного
+                                    документооборота "Вчасно"</a> (регистрация на портале Online24) <span
+                                    class="channel__price">190 грн\мес.</span> <br>
                                 <b>Кол-во минут исходящих звонков <span
                                         class="underline">НА ВСЕ НАПРАВЛЕНИЯ УКРАИНЫ</span>,
                                     в мес.:</b> 500<br>
@@ -260,13 +262,13 @@
                                     проч.)</p>
                             </div>
                         </li>
-                        <h2 class="channels__title">Каналы с входящими звонками:</h2>
+                        <h2 class="channels__title">SIP-каналы с входящими звонками:</h2>
                         <li class="channel__item">
                             <div class="channel-acco__trigger hvr-forward hvr-forward active">
                                 <a href="#" class="channel-acco__trigger-link">
                                     <div class="channel-acco__trigger-title"><i class="fa fa-caret-right"
                                                                                 aria-hidden="true"></i><span
-                                            class="channel__name">«Для входящих мобильный»</span> SIP-канал (только
+                                            class="channel__name">«Для входящих мобильный»</span> (только
                                         входящие
                                         звонки)
                                         <div class="channel-acco__trigger-icon">
@@ -276,10 +278,11 @@
                                 </a>
                             </div>
                             <div class="channel-acco__descr">
-                                <b>Ежемесячная абонплата:</b> 160 грн\мес. <br>
+                                <b>Ежемесячная абонплата:</b> <span class="channel__price">160 грн\мес.</span><br>
                                 <p>К каналу возможно подключение любых номеров мобильных операторов Украины (подробнее
                                     см. в
-                                    разделе <a href="">Номера</a>). В рамках услуги каждый номер можно сделать
+                                    разделе <a href="numbers.html">Номера</a>). В рамках услуги каждый SIP-номер можно
+                                    сделать
                                     многоканальным: подключить его к нескольким таким каналам и принять по SIP несколько
                                     одновременных разговоров.</p>
                                 <p>Возможен подбор одного запоминающегося входящего номера на всех операторов,
@@ -312,7 +315,7 @@
                     <p class="channels__decsr">Запутались с выбором каналов? <a href="contacts.html">Свяжитесь с
                         нами</a> -
                         мы поможем сделать оптимальный выбор!</p>
-                    <button class="channels__order hvr-grow" id="order">Заявка на подключение</button>
+                    <button class="channels__order hvr-grow" id="roma">Заявка на подключение</button>
                 </div>
                 <section class="connect">
                     <p>Каналы подключаются:</p>
@@ -373,8 +376,8 @@
 
                     <p>1) Выберите каналы <a href="#channels">здесь</a>. 2) Если к каналам нужны многоканальные
                         мобильные номера, выберите их
-                        <a href="numbers.html">здесь</a>. После этого <a href="contacts.html">свяжитесь с нами.</a> или
-                        <a href="#order">заполните заявку</a></p>
+                        <a href="numbers.html">здесь</a>. После этого <a href="contacts.html">свяжитесь с нами</a> или
+                        <a href="#roma">заполните заявку</a></p>
                 </section>
                 <section class="section section__clients">
                     <h2 class="content__title content__title-index">Наши клиенты</h2>
@@ -479,6 +482,7 @@
 </footer>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
     (function (i, s, o, g, r, a, m) {
