@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
+    htmlmin = require('gulp-htmlmin'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
@@ -56,14 +57,14 @@ var config = {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //������� ����� �� ������� ����
-        .pipe(rigger()) //�������� ����� rigger
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.dest.html)) //�������� �� � ����� build
         .on('end', browserSync.reload); //� ������������ ��� ������ ��� ����������
 });
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //������ ��� main ����
-        .pipe(rigger()) //�������� ����� rigger
+    // .pipe(rigger()) //�������� ����� rigger
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(uglify()) //������ ��� js
         .pipe(sourcemaps.write('.')) //�������� �����
@@ -75,8 +76,8 @@ gulp.task('css:build', function () {
     gulp.src(path.src.css) //������� ��� main.scss
         .pipe(sourcemaps.init()) //�� �� ����� ��� � � js
         .pipe(sass().on('error', sass.logError)) //������������
-        // .pipe(prefixer()) //������� ��������� ��������
-        // .pipe(cleanCSS()) //������
+        .pipe(prefixer()) //������� ��������� ��������
+        .pipe(cleanCSS()) //������
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.dest.css)) //� � build
         .on('end', browserSync.reload);
