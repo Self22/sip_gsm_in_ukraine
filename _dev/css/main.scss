@@ -61,7 +61,7 @@ html, body{
 
 .wrapper {
 
-  font-size: 18px;
+
   margin: 0 auto;
 
   @include desktop {
@@ -789,7 +789,7 @@ body{
 
 .channels__decsr {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 25px;
   padding: 0 15%;
 
@@ -839,11 +839,10 @@ body{
 
 .content__title {
   text-align: center;
-  padding-right: 20%;
   margin-bottom: rem(30px);
   font-weight: 400;
   letter-spacing: 2px;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .content__title-index {
@@ -1040,7 +1039,7 @@ body{
 .nav {
   list-style: none;
   text-align: right;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 1px;
@@ -1300,7 +1299,7 @@ body{
 }
 
 .channels__title {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -1316,6 +1315,10 @@ body{
   font-size: 25px;
   padding: 15px 70px;
   margin-top: 40px;
+
+  &-pbx {
+    margin-bottom: 40px;
+  }
 }
 
 /////////////// popup order block
@@ -1354,6 +1357,15 @@ body{
   @include tablets {
     height: 95vh;
     width: 90%;
+  }
+
+  &-pbx {
+
+    @include phones {
+      width: 90vw;
+      top: 50%;
+      left: 50vw;
+    }
   }
 
 }
@@ -1490,7 +1502,7 @@ body{
   @include tablets {
     margin-top: 10px;
     width: 90%;
-    font-size: 7vw;
+    font-size: 5vw;
   }
 }
 
@@ -1790,4 +1802,85 @@ body{
   font-size: 18px;
   font-weight: 600;
   color: #092772;
+}
+
+////// ip pbx
+
+.pbx__price {
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed;
+  margin-right: 10%;
+  margin-left: 3%;
+
+  @include desktop {
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  border: 1px solid #ccc; /* граница всей таблицы */
+
+  & tr {
+    border: 1px solid #ccc; /* границы между строками */
+    padding: 5px 10px;
+
+  }
+  & td, th {
+    border: 1px solid #ccc; /* границы между столбцами */
+    padding: 5px 10px;
+    white-space: nowrap;
+    text-align: center;
+
+  }
+
+  & th {
+    font-weight: 700;
+    background: #1e4f7a;
+    color: white;
+    border-color: #1e4f7a;
+
+  }
+
+  & tr {
+    height: 47px;
+  }
+}
+
+.item__col {
+  text-align: left !important;
+}
+
+.pbx__name {
+  font-size: 13px;
+  color: #111f44;
+  white-space: normal !important;
+
+  font-weight: 600;
+
+}
+
+.item__col-price {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  background: #1e4f7a;
+  color: white;
+  border-color: #1e4f7a;
+}
+
+.td__price {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  background: #1e4f7a;
+  border-color: #1e4f7a;
+}
+
+.st__col {
+  width: 52%;
+}
+
+.nd__col {
+  width: 12%;
 }
