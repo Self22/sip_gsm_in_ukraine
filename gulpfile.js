@@ -57,7 +57,7 @@ var config = {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //������� ����� �� ������� ����
-    // .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.dest.html)) //�������� �� � ����� build
         .on('end', browserSync.reload); //� ������������ ��� ������ ��� ����������
 });
@@ -76,8 +76,8 @@ gulp.task('css:build', function () {
     gulp.src(path.src.css) //������� ��� main.scss
         .pipe(sourcemaps.init()) //�� �� ����� ��� � � js
         .pipe(sass().on('error', sass.logError)) //������������
-        // .pipe(prefixer()) //������� ��������� ��������
-        // .pipe(cleanCSS()) //������
+        .pipe(prefixer()) //������� ��������� ��������
+        .pipe(cleanCSS()) //������
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.dest.css)) //� � build
         .on('end', browserSync.reload);
