@@ -1884,3 +1884,14 @@ body{
 .nd__col {
   width: 12%;
 }
+
+.intro_c-num {
+
+  font-size: 16px;
+  text-align: left;
+  padding: 0 5%;
+
+  @include phones {
+    font-size: 14px;
+  }
+}
