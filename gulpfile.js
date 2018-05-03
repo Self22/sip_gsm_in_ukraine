@@ -3,7 +3,7 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
-    uglify = require('gulp-uglify'),
+    //uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
@@ -64,9 +64,9 @@ gulp.task('html:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //������ ��� main ����
-    // .pipe(rigger()) //�������� ����� rigger
+        // .pipe(rigger()) //�������� ����� rigger
         .pipe(sourcemaps.init()) //�������������� sourcemap
-        .pipe(uglify()) //������ ��� js
+        //.pipe(uglify()) //������ ��� js
         .pipe(sourcemaps.write('.')) //�������� �����
         .pipe(gulp.dest(path.dest.js)) //�������� ������� ���� � build
         .on('end', browserSync.reload); //� ������������ ������
@@ -85,12 +85,12 @@ gulp.task('css:build', function () {
 
 gulp.task('img:build', function () {
     gulp.src(path.src.img) //������� ���� ��������
-    // .pipe(imagemin({ //������ ��
-    //     progressive: true,
-    //     svgoPlugins: [{removeViewBox: false}],
-    //     use: [pngquant()],
-    //     interlaced: true
-    // }))
+        // .pipe(imagemin({ //������ ��
+        //     progressive: true,
+        //     svgoPlugins: [{removeViewBox: false}],
+        //     use: [pngquant()],
+        //     interlaced: true
+        // }))
         .pipe(gulp.dest(path.dest.img)) //� ������ � build
         .on('end', browserSync.reload);
 });
