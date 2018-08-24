@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Виртуальная АТС Phonet | Интеграция с CRM, широкий функционал, быстрое подключение</title>
+    <meta name="description"
+          content="Программная АТС для бизнеса: использование всех возможностей цифровой телефонии">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="alternate" href="oblachnaya-ats-phonet-ukr.html">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="overlay"></div>
+<div class="popup__form-order popup__form-order-pbx">
+    <span class="close__popup">&times</span>
+    <div class="popup__title">Заявка на подключение виртуальной АТС</div>
+
+    <div class="popup__text">Оставьте свои контактные данные и наш менеджер свяжется с Вами.
+    </div>
+    <form id="popupform-order" class="popupform-order">
+        <input type="hidden" name="form_type" value="order">
+        <input type="hidden" name="product" value="ip-pbx">
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__name-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="text" name="town" class="order__name-input" id="town"
+                   placeholder="Город" required>
+        </div>
+        <div class="popupform__textarea">
+            <textarea name="order" class="form-control" id="order" rows="4"
+                      placeholder="Если нужно, напишите комментарий к Вашей заявке "
+            ></textarea>
+
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ОТПРАВИТЬ"
+               id="popup__order-btn">
+    </form>
+</div>
+<header class="header">
+    <div class="container">
+        <div class="header__left" itemscope itemtype="http://schema.org/LocalBusiness">
+            <a href="index.html" class="logo__link">
+                <div class="logo">
+                    <p itemprop="brand">SIP hub </p>
+                    <span>в Украине</span>
+                    <img itemprop="image" class="schema__img" src="img/univ-calls_icon.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="header__right">
+
+            <address class="header__phones">
+                <a href="tel:+380504544043" class="phone__link" itemprop="telephone" content="+380504544043"><i
+                        class="fa fa-phone" aria-hidden="true"></i>
+                    <p>+38
+                        (050) 454-40-43</p></a>
+
+                <a href="tel:+380675665331" class="phone__link" itemprop="telephone" content="+380675665331"><i
+                        class="fa fa-phone" aria-hidden="true"></i>
+                    <p>+38
+                        (067) 566-53-31</p></a>
+                <a class="header__email" itemprop="email" href="mailto:info@sip-gsm.in.ua"><i
+                        class="fa fa-envelope faa-horizontal"
+                        aria-hidden="true"></i><span>info@sip-gsm.in.ua</span></a>
+            </address>
+            <div class="nav__mob">
+                <div class="lines">
+                    <p>_<br>_ <br>_</p>
+                </div>
+                <ul class="nav__dropdown">
+                    <li class="mob__item mob__item-active"><a href="index.html">SIP-каналы</a></li>
+                    <li class="mob__item"><a href="numbers.html">SIP-номера</a></li>
+                    <li class="mob__item mob__item-active"><a
+                    >Виртуальная
+                        АТС</a></li>
+                    <li class="mob__item"><a href="partnership.html">Партнёрство</a></li>
+                    <li class="mob__item"><a href="channels.html">О нас</a></li>
+                    <li class="mob__item"><a href="contacts.html">Контакты</a></li>
+                    <li class="mob__item mob__item-lang"><a href="oblachnaya-ats-phonet-ukr.html">Ukr</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="wrapper">
+    <div class="main__block">
+        <nav class="menu">
+            <ul class="nav">
+                <li class="nav-item hvr-grow "><a href="index.html">SIP-каналы</a><i
+                        class="fa fa-caret-left"
+                        aria-hidden="true"></i></li>
+                <li class="nav-item hvr-grow"><a href="numbers.html">SIP номера<i class="fa fa-caret-left"
+                                                                                  aria-hidden="true"></i></a></li>
+
+
+                <li class="nav-item hvr-grow nav-item-active"><a
+                >Виртуальная
+                    АТС<i class="fa fa-caret-left"
+                          aria-hidden="true"></i></a></li>
+                <li class="nav-item hvr-grow"><a href="partnership.html">Партнёрство<i class="fa fa-caret-left"
+                                                                                       aria-hidden="true"></i></a></li>
+                <li class="nav-item hvr-grow"><a href="channels.html">О нас<i class="fa fa-caret-left"
+                                                                              aria-hidden="true"></i></a></li>
+
+                <li class="nav-item hvr-grow"><a href="contacts.html">Контакты<i class="fa fa-caret-left"
+                                                                                 aria-hidden="true"></i></a></li>
+                <li class="nav-item nav-item-lang hvr-grow"><a href="oblachnaya-ats-phonet-ukr.html">Укр<i
+                        class="fa fa-caret-left"
+                        aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div class="cases__nav">
+                <h3 class="cases__nav-title">Наши решения:</h3>
+                <ul class="cases__nav-list">
+                    <li class="cases__nav-item"><a href="cases.html#marketing">Маркетинг и продажи</a></li>
+                    <li class="cases__nav-item"><a href="cases.html#taxi">Такси</a></li>
+                    <li class="cases__nav-item"><a href="cases.html#credit">Кредитные агентства</a></li>
+                    <li class="cases__nav-item"><a href="cases.html#collectors">Коллекторы</a></li>
+                    <li class="cases__nav-item"><a href="cases.html#autodial">Автообзвон</a></li>
+                    <li class="cases__nav-item"><a href="cases.html#callback">Коллбэк</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <main class="content">
+            <section class="section">
+                <h1 class="content__title content__title-index">Виртуальная АТС Phonet</h1>
+                <p>Виртуальная (облачная) АТС – сервис, который позволяет бизнесу быстро развернуть и настроить
+                    телефонию с широким функционалом без серъёзных вложений в телефонное оборудование. Для
+                    обеспечения связи в таких сервисах нужен только Интернет (связь осуществляется по
+                    SIP-протоколу).</p>
+                <p>Фонет – лидер украинского рынка виртуальных АТС. Наши решения абсолютно доступны для украинского
+                    бизнеса любого размера, отличаются быстрым подключением, лёгкой настройкой и широчайшим
+                    функционалом. АТС легко интегрируются с самыми популярными CRM-системами для бизнеса: amoCRM,
+                    Bitrix24, 1С, Terrasoft, Мегаплан, ArchiDelivery, TallantoProf, МоиТуристы.</p>
+
+                <p>Важная особенность нашего сервиса : персональный менеджер, закреплённый за абонентом. В случае
+                    возникновения технической или финансовой проблемы Вам не придётся заново пересказывать её очередному
+                    менеджеру, поднявшему трубку.</p>
+
+                <p>Для приёма и совершения звонков в программной АТС Фонет Вы можете использовать наши <a
+                        href="numbers.html">SIP-номера</a> и
+                    <a href="index.html">каналы</a>, а также SIP-каналы любых сторонних провайдеров.
+                </p>
+                <p>При подключении облачной АТС Фонет на нашем портале Вы автоматически получаете скидки на обслуживание
+                    облачных сервисов от нашего партнёра
+                    <a href="http://online24.net.ua/excellence.html" rel="nofollow">портала Online24 </a>.
+                </p>
+            </section>
+            <section class="pbx__tariffs">
+                <h2 class="content__title content__title-index">Тарифы</h2>
+
+                <table class="pbx__price">
+                    <col class="st__col">
+                    <col class="nd__col">
+                    <col class="nd__col">
+                    <col class="nd__col">
+                    <col class="nd__col">
+                    <thead>
+                    <tr>
+                        <th class="pbx__name">Функции пакета</th>
+                        <th class="pbx__name">Команда</th>
+                        <th class="pbx__name">Компания</th>
+                        <th class="pbx__name">Корпорация</th>
+                        <th class="pbx__name">Коробочная версия</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="item__col">Количество пользователей</td>
+                        <td>1-10</td>
+                        <td>1-25</td>
+                        <td>25+</td>
+                        <td>4+</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Внутренние номера сотрудников</td>
+                        <td>6</td>
+                        <td>10</td>
+                        <td>25</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Подключённые внешние линии</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>Неограниченно</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Запись разговоров</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">История звонков <br> (разбивка по сотрудникам)</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Список необработанных пропущенных звонков</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Статистика по звонкам компании</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Система анализа рекламных кампаний
+                        </td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Показатели эффективности работы сотрудников
+                        </td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Настройка прав доступа сотрудников
+                        </td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Голосовая почта с доставкой на email
+                        </td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Перевод и парковка вызова</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Сценарии приема звонков
+                        </td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Переадресация вызова <br>на мобильный или домашний тел. номер
+                        </td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Интерактивное голосовое меню (IVR)
+                        </td>
+                        <td>Одноуров.</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Функция "Автосброс входящего звонка <br> и автоперезвон"
+                        </td>
+                        <td></td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Отправка SMS из личного кабинета
+                        </td>
+                        <td></td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Интеграция со Skype (звонки за границу <br> по тарифам Skype-business)
+
+                        <td></td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Привязка Клиент-Сотрудник</td>
+                        <td></td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Call Catcher виджет заказа <br> звонка для Вашего сайта
+                        </td>
+                        <td></td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Суфлирование (подсказка сотруднику, <br> неслышная для клиента)
+                        </td>
+                        <td></td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Мини CRM Phonet (контакты, <br> всплывающая карточка клиента)
+                        </td>
+                        <td></td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Интеграция с Bitrix24, 1С, AmoCRM, Мегаплан и др.
+                        </td>
+                        <td></td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                        <td>&#9899;</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Бесплатная запись голосовых приветствий
+                        </td>
+                        <td>15 сек.</td>
+                        <td>30 сек.</td>
+                        <td>60 сек.</td>
+                        <td>100 сек.</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Дополнительный пользователь <br> (сверх предусмотренных в пакете)
+                        </td>
+                        <td>+15 грн.</td>
+                        <td>+20 грн.</td>
+                        <td>+15 грн.</td>
+                        <td>+2100 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col">Дополнительный номер <br> (сверх предусмотренных в пакете)
+                        </td>
+                        <td>+30 грн.</td>
+                        <td>+30 грн.</td>
+                        <td>+30 грн.</td>
+                        <td>Бесплатно</td>
+                    </tr>
+                    <tr>
+                        <td class="item__col item__col-price">Стоимость пакета
+                        </td>
+                        <td class="td__price">196
+                            грн/мес
+                        </td>
+                        <td class="td__price">399
+                            грн/мес
+                        </td>
+                        <td class="td__price">798
+                            грн/мес
+                        </td>
+                        <td class="td__price">8 400
+                            грн
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <p class="channels__decsr">Нужна помощь в выборе пакета? <a href="contacts.html">Свяжитесь с
+                    нашими менеджерами!</a></p>
+                <button class="channels__order channels__order-pbx hvr-grow" id="roma">Заявка на подключение</button>
+            </section>
+            <section class="section">
+
+                <p>При подключении облачной АТС Фонет на нашем портале Вы автоматически получаете скидки на обслуживание
+                    облачных сервисов от нашего партнёра
+                    <a href="http://online24.net.ua/excellence.html" rel="nofollow">портала Online24 </a>.
+                </p>
+            </section>
+
+        </main>
+    </div>
+    <div class="empty"></div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__support"><b>E-mail:</b><a class="footer__email" itemprop="email"
+                                                      href="mailto:info@sip-gsm.in.ua">
+            info@sip-gsm.in.ua</a></div>
+
+    </div>
+</footer>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-42666121-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

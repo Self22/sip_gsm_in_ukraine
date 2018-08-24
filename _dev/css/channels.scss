@@ -1,0 +1,207 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+
+.content_channels {
+  text-align: center;
+}
+
+.intro_c {
+  font-size: 18px;
+  padding: 10px 5% 0;
+}
+
+.section__title {
+  font-weight: 400;
+  margin-bottom: 4%;
+}
+
+.channels__acc {
+  margin-bottom: 50px;
+}
+
+.channels__list, .channels__item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.channel__item {
+
+  margin-bottom: 25px;
+
+}
+
+/* Forward */
+.hvr-forward {
+
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.channels__list {
+  margin: 0 5%;
+}
+
+.channel-acco__descr {
+  display: none;
+  width: 78%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  text-align: justify;
+  padding: 15px 0 5px;
+  font-weight: 100;
+}
+
+.channel__descr {
+  font-weight: 300;
+
+}
+
+.channel-acco__trigger {
+  height: 100%;
+}
+
+.channel-acco__trigger-link {
+  text-decoration: none;
+}
+
+.channel-acco__trigger-title {
+
+  white-space: nowrap;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 1) 0%, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 0%, rgba(222, 222, 222, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+  position: relative;
+  border: 1px solid #e6d9e6;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  padding: 25px 10% 25px 20px;
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+  height: 100%;
+
+  @include phones {
+    white-space: normal;
+  }
+
+  & i {
+    margin-right: 15px;
+    font-size: 22px;
+  }
+
+  &:hover {
+    font-weight: 500;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  @include desktop {
+    font-size: 17px;
+  }
+
+  @include laptop {
+    padding-right: 10%;
+    padding-left: 4%;
+    font-size: 16px;
+  }
+
+  @include tablets {
+    padding-right: 10%;
+    padding-left: 4%;
+    font-size: 16px;
+  }
+
+  @include phones {
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 4%;
+    font-size: 16px;
+  }
+
+}
+
+.active .channel-acco__trigger .channel-acco__trigger-title {
+  border: 1px solid rgba(52, 50, 167, 0.51);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.channel-acco__trigger-icon {
+  position: absolute;
+  bottom: 46%;
+  right: 4%;
+  width: 38px;
+  transform: translateY(50%);
+
+  & img {
+    max-width: 100%;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+.channel__name {
+  font-weight: 700;
+}
+
+.connect {
+  text-align: left;
+  padding-left: 4%;
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 5%;
+  padding-top: 2%;
+  margin-bottom: 5%;
+
+  & p {
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  & i {
+    font-weight: 300;
+  }
+
+  @include phones {
+    padding-left: 7%;
+    margin: 0;
+    width: 100%;
+    padding-right: 7%;
+  }
+}
+
+.sec__text {
+  text-align: left;
+}
+
+.channels__decsr {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+  padding: 0 15%;
+
+  @include phones {
+    font-size: 5.6vw;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+

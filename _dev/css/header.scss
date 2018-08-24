@@ -1,0 +1,302 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: url(../img/molecules.jpg);
+  background-size: 100%;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.header .container {
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header__left, .header__right {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 11%;
+  width: 45%;
+  height: 65%;
+  color: #ffffff;
+  z-index: 100;
+
+  @include laptop {
+    top: 13%;
+  }
+
+  @include tablets {
+    top: 31%;
+    left: 5%;
+  }
+
+  @include phones {
+    top: 17%;
+    left: 5%;
+  }
+
+  & p {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: 90%;
+
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 38px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    @include laptop {
+      font-size: 28px;
+    }
+
+    @include tablets {
+      font-size: 20px;
+      white-space: normal;
+      text-align: center;
+    }
+
+    @include phones {
+      color: yellow;
+      font-size: 16px;
+      white-space: normal;
+      text-align: center;
+    }
+
+  }
+
+  & span {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.header__descr {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  width: 90%;
+  height: 125px;
+  border: 2px solid #7d8caa;
+  border-radius: 10px;
+
+  @include desktop {
+
+  }
+
+  @include laptop {
+
+  }
+
+  @include tablets {
+    right: 3%;
+    width: 94%;
+    height: rem(100px);
+  }
+
+  @include phones {
+    right: 3%;
+    width: 94%;
+    height: rem(100px);;
+  }
+}
+
+.header__phones {
+  position: absolute;
+  top: 20%;
+  right: 9%;
+  text-align: left;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: 1px;
+
+  & p {
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    margin-top: 1px;
+    font-size: 23px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    @include tablets {
+      margin-top: 0%;
+      font-size: 18px;
+    }
+
+    @include phones {
+      margin-top: 32px;
+      font-size: 15px;
+    }
+  }
+
+  @include tablets {
+    right: 20%;
+    top: 18%;
+  }
+
+  @include phones {
+    right: 26%;
+    top: -19%;
+  }
+}
+
+//mobile nav header
+
+.nav__mob {
+  display: none;
+  position: absolute;
+  top: 18%;
+  right: 4%;
+  width: 63px;
+  height: 63px;
+  border: 2px solid #f2fdff;
+  border-radius: 5px;
+
+  & p {
+    font-size: 72px;
+    color: #f2fdff;
+    padding: 0;
+    margin: 0;
+    line-height: 0.2;
+  }
+
+  @include tablets {
+    display: block;
+  }
+
+  @include phones {
+    display: block;
+  }
+
+}
+
+.nav__dropdown {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  right: -6%;
+  top: 91%;
+
+  text-align: center;
+  width: 75vw;
+  height: 230px;
+  border: 1px solid rgba(9, 39, 114, 0.5);
+  font-size: 26px;
+  border-radius: 8px;
+  background: rgba(184, 241, 255, 1);
+  z-index: 100;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+
+  & a {
+    text-decoration: none;
+    color: #092772;
+    font-weight: 300;
+
+    &:hover {
+      font-weight: 500;
+    }
+  }
+}
+
+.lines {
+  position: absolute;
+  bottom: 73%;
+  left: 23%;
+}
+
+.nav__mob:hover .nav__dropdown {
+  display: block;
+}
+
+.mob__item-active a {
+  font-weight: 500;
+}
+
+.mob__item-lang {
+  margin-top: 10px;
+  & a {
+    font-style: italic;
+    font-weight: 500;
+    color: #276ac0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.phone__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & i {
+    color: white;
+    font-size: 24px;
+    margin-right: 3px;
+    margin-top: 2px;
+  }
+}
+
+.header__email {
+  font-size: rem(18px);
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #fff;
+  font-style: normal;
+  text-align: center;
+  margin-top: 2px;
+  text-decoration: none;
+
+  & i {
+    margin-right: 8px;
+  }
+
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+
+
+
+
+
