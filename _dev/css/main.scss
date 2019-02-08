@@ -659,13 +659,9 @@ body{
   margin-left: 5%;
   text-align: justify;
   padding: 15px 0 5px;
-  font-weight: 100;
 }
 
-.channel__descr {
-  font-weight: 300;
 
-}
 
 .channel-acco__trigger {
   height: 100%;
@@ -752,7 +748,7 @@ body{
 }
 
 .channel__name {
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -1906,7 +1902,7 @@ body{
   & td, th {
     border: 1px solid black;
     text-align: center;
-    padding: 10px 25px;
+    padding: 10px 1%;
   }
 }
 
